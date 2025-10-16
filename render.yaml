@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: docker
+    plan: free
+    branch: main
+    docker:
+      dockerfile: Dockerfile
+    envVars:
+      - key: TOKEN
+        value: "8298937133:AAGAHGesQKCpwfnU1kTuBnjQ96kDVA_HWfM"
+      - key: ADMIN_ID
+        value: "6675722513"
